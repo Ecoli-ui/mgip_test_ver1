@@ -1,0 +1,114 @@
+{
+    "settings": {
+        "save_directory": "/Users/mephistopheles/Documents/T1DSimulatorSensorController-main 2/py-mgipsim/SimulationResults",
+        "start_time": 0,
+        "end_time": 1440,
+        "random_seed": 402,
+        "random_state": {},
+        "sampling_time": 1,
+        "solver_name": "RK4",
+        "simulator_name": "SingleScaleSolver"
+    },
+    "input_generation": {
+        "fraction_cho_intake": [
+            0.4,
+            0.6
+        ],
+        "fraction_cho_as_snack": [
+            0.1,
+            0.2
+        ],
+        "net_calorie_balance": [
+            0
+        ],
+        "meal_duration": [
+            30,
+            60
+        ],
+        "snack_duration": [
+            5,
+            15
+        ],
+        "breakfast_carb_range": [
+            80,
+            120
+        ],
+        "lunch_carb_range": [
+            80,
+            120
+        ],
+        "dinner_carb_range": [
+            80,
+            120
+        ],
+        "am_snack_carb_range": [
+            10,
+            20
+        ],
+        "pm_snack_carb_range": [
+            10,
+            20
+        ],
+        "total_carb_range": [
+            260,
+            400
+        ],
+        "breakfast_time_range": [
+            360,
+            480
+        ],
+        "lunch_time_range": [
+            720,
+            840
+        ],
+        "dinner_time_range": [
+            1080,
+            1200
+        ],
+        "am_snack_time_range": [
+            540,
+            660
+        ],
+        "pm_snack_time_range": [
+            900,
+            1020
+        ],
+        "running_start_time": [],
+        "running_duration": [],
+        "running_incline": [],
+        "running_speed": [],
+        "cycling_start_time": [],
+        "cycling_duration": [],
+        "cycling_power": [],
+        "sglt2i_dose_magnitude": 0,
+        "sglt2i_dose_time_range": [
+            360,
+            540
+        ]
+    },
+    "inputs": null,
+    "controller": {
+        "name": "OpenLoop",
+        "parameters": []
+    },
+    "patient": {
+        "demographic_info": {
+            "renal_function_category": 1,
+            "body_weight_range": [
+                60,
+                80
+            ]
+        },
+        "number_of_subjects": 20,
+        "model": {
+            "name": "T1DM.ExtHovorka",
+            "parameters": null,
+            "initial_conditions": null
+        },
+        "mscale": {
+            "models": [
+                "Multiscale.BodyWeight"
+            ]
+        }
+    }
+}
