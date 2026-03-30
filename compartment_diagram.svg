@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1200 900"
+   width="1200"
+   height="900"
+   version="1.1"
+   id="svg60"
+   sodipodi:docname="compartment_diagram.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   inkscape:export-filename="compartment_diagram.png"
+   inkscape:export-xdpi="64"
+   inkscape:export-ydpi="64"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview60"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.82"
+     inkscape:cx="595.12195"
+     inkscape:cy="551.82927"
+     inkscape:window-width="1736"
+     inkscape:window-height="842"
+     inkscape:window-x="294"
+     inkscape:window-y="177"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg60" />
+  <!-- Title -->
+  <text
+     x="600"
+     y="30"
+     font-size="24"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#000"
+     id="text1">
+    T1D Glucose-Insulin Compartment Model
+  </text>
+  <!-- Meal Input -->
+  <g
+     id="meal-input">
+    <rect
+       x="50"
+       y="80"
+       width="140"
+       height="60"
+       fill="#FFE6CC"
+       stroke="#D79B00"
+       stroke-width="2"
+       rx="5"
+       id="rect1" />
+    <text
+       x="120"
+       y="105"
+       font-size="14"
+       font-weight="bold"
+       text-anchor="middle"
+       id="text2">Meal Input</text>
+    <text
+       x="120"
+       y="125"
+       font-size="12"
+       text-anchor="middle"
+       id="text3">(carbs, grams)</text>
+  </g>
+  <!-- Meal Absorption Compartment -->
+  <g
+     id="meal-absorption">
+    <rect
+       x="50"
+       y="180"
+       width="140"
+       height="80"
+       fill="#FFE6CC"
+       stroke="#D79B00"
+       stroke-width="2"
+       rx="5"
+       id="rect3" />
+    <text
+       x="120"
+       y="205"
+       font-size="14"
+       font-weight="bold"
+       text-anchor="middle"
+       id="text4">Gastric</text>
+    <text
+       x="120"
+       y="223"
+       font-size="14"
+       font-weight="bold"
+       text-anchor="middle"
+       id="text5">Absorption (M)</text>
+    <text
+       x="120"
+       y="243"
+       font-size="11"
+       text-anchor="middle"
+       id="text6">dM/dt = -M/τ</text>
+    <text
+       x="120"
+       y="256"
+       font-size="10"
+       text-anchor="middle"
+       id="text7">τ = 40 min</text>
+  </g>
+  <!-- Arrow from Meal Input to Absorption -->
+  <line
+     x1="120"
+     y1="140"
+     x2="120"
+     y2="180"
+     stroke="#333"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     id="line7" />
+  <!-- Glucose Compartment (Central) -->
+  <g
+     id="glucose">
+    <rect
+       x="350"
+       y="280"
+       width="220"
+       height="140"
+       fill="#CCE5FF"
+       stroke="#0066CC"
+       stroke-width="3"
+       rx="5"
+       id="rect7" />
+    <text
+       x="460"
+       y="305"
+       font-size="16"
+       font-weight="bold"
+       text-anchor="middle"
+       id="text8">GLUCOSE (G)</text>
+    <text
+       x="460"
+       y="330"
+       font-size="12"
+       text-anchor="middle"
+       id="text9">dG/dt = -p1·(G-Gb) - X·G + Ra</text>
+    <text
+       x="460"
+       y="350"
+       font-size="11"
+       text-anchor="middle"
+       id="text10">G = glucose (mg/dL)</text>
+    <text
+       x="460"
+       y="368"
+       font-size="11"
+       text-anchor="middle"
+       id="text11">Gb = 100 mg/dL (basal)</text>
+    <text
+       x="460"
+       y="386"
+       font-size="11"
+       text-anchor="middle"
+       id="text12">p1 = 0.028 1/min</text>
+    <text
+       x="460"
+       y="404"
+       font-size="11"
+       text-anchor="middle"
+       id="text13">Ra = meal absorption rate</text>
+  </g>
+  <!-- Arrow from Meal Absorption to Glucose -->
+  <path
+     d="M 190 220 L 260 220 L 260 340 L 350 340"
+     stroke="#D79B00"
+     stroke-width="2"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path13" />
+  <text
+     x="220"
+     y="215"
+     font-size="10"
+     fill="#D79B00"
+     id="text14">Ra(t)</text>
+  <!-- Insulin Action Compartment -->
+  <g
+     id="insulin-action">
+    <rect
+       x="680"
+       y="280"
+       width="180"
+       height="140"
+       fill="#FFE6E6"
+       stroke="#CC0000"
+       stroke-width="2"
+       rx="5"
+       id="rect14" />
+    <text
+       x="770"
+       y="305"
+       font-size="14"
+       font-weight="bold"
+       text-anchor="middle"
+       id="text15">Insulin Action (X)</text>
+    <text
+       x="770"
+       y="330"
+       font-size="12"
+       text-anchor="middle"
+       id="text16">dX/dt = -p2·X + p3·I</text>
+    <text
+       x="770"
+       y="355"
+       font-size="11"
+       text-anchor="middle"
+       id="text17">X = insulin action</text>
+    <text
+       x="770"
+       y="373"
+       font-size="11"
+       text-anchor="middle"
+       id="text18">on glucose (1/min)</text>
+    <text
+       x="770"
+       y="391"
+       font-size="10"
+       text-anchor="middle"
+       id="text19">p2 = 0.025 1/min</text>
+    <text
+       x="770"
+       y="407"
+       font-size="10"
+       text-anchor="middle"
+       id="text20">p3 = 0.000013</text>
+  </g>
+  <!-- Arrow from Insulin Action to Glucose (feedback) -->
+  <path
+     d="M 680 350 L 570 350"
+     stroke="#CC0000"
+     stroke-width="2"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path20" />
+  <text
+     x="620"
+     y="340"
+     font-size="10"
+     fill="#CC0000"
+     id="text21">X·G</text>
+  <!-- Plasma Insulin Compartment -->
+  <g
+     id="plasma-insulin">
+    <rect
+       x="920"
+       y="280"
+       width="200"
+       height="140"
+       fill="#E6F3FF"
+       stroke="#0066CC"
+       stroke-width="2"
+       rx="5"
+       id="rect21" />
+    <text
+       x="1020"
+       y="305"
+       font-size="14"
+       font-weight="bold"
+       text-anchor="middle"
+       id="text22">Plasma Insulin (I)</text>
+    <text
+       x="1020"
+       y="330"
+       font-size="12"
+       text-anchor="middle"
+       id="text23">dI/dt = u/Vg - k·(I-Ib)</text>
+    <text
+       x="1020"
+       y="355"
+       font-size="11"
+       text-anchor="middle"
+       id="text24">I = insulin (mU/L)</text>
+    <text
+       x="1020"
+       y="373"
+       font-size="11"
+       text-anchor="middle"
+       id="text25">Ib = 10 mU/L (basal)</text>
+    <text
+       x="1020"
+       y="391"
+       font-size="10"
+       text-anchor="middle"
+       id="text26">u = infusion (U/min)</text>
+    <text
+       x="1020"
+       y="407"
+       font-size="10"
+       text-anchor="middle"
+       id="text27">k = 0.1 1/min</text>
+  </g>
+  <!-- Arrow from Plasma Insulin to Insulin Action -->
+  <path
+     d="M 920 350 L 860 350"
+     stroke="#0066CC"
+     stroke-width="2"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path27" />
+  <text
+     x="885"
+     y="340"
+     font-size="10"
+     fill="#0066CC"
+     id="text28">p3·I</text>
+  <!-- Insulin Pump -->
+  <g
+     id="pump">
+    <rect
+       x="920"
+       y="480"
+       width="200"
+       height="80"
+       fill="#E6E6FA"
+       stroke="#6600CC"
+       stroke-width="2"
+       rx="5"
+       id="rect28" />
+    <text
+       x="1020"
+       y="505"
+       font-size="14"
+       font-weight="bold"
+       text-anchor="middle"
+       id="text29">Insulin Pump</text>
+    <text
+       x="1020"
+       y="528"
+       font-size="11"
+       text-anchor="middle"
+       id="text30">Basal: 0.02 U/min</text>
+    <text
+       x="1020"
+       y="545"
+       font-size="11"
+       text-anchor="middle"
+       id="text31">Max bolus: 0.1 U/min</text>
+  </g>
+  <!-- Arrow from Pump to Plasma Insulin -->
+  <line
+     x1="1020"
+     y1="420"
+     x2="1020"
+     y2="480"
+     stroke="#6600CC"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     id="line31" />
+  <text
+     x="1030"
+     y="450"
+     font-size="10"
+     fill="#6600CC"
+     id="text32">u(t)</text>
+  <!-- Glucose Sensor -->
+  <g
+     id="sensor">
+    <rect
+       x="350"
+       y="480"
+       width="220"
+       height="80"
+       fill="#F0F0F0"
+       stroke="#666"
+       stroke-width="2"
+       rx="5"
+       id="rect32" />
+    <text
+       x="460"
+       y="505"
+       font-size="14"
+       font-weight="bold"
+       text-anchor="middle"
+       id="text33">Glucose Sensor (CGM)</text>
+    <text
+       x="460"
+       y="528"
+       font-size="11"
+       text-anchor="middle"
+       id="text34">+ Noise (σ = 3 mg/dL)</text>
+    <text
+       x="460"
+       y="545"
+       font-size="11"
+       text-anchor="middle"
+       id="text35">+ Delay (2 steps)</text>
+  </g>
+  <!-- Arrow from Glucose to Sensor -->
+  <line
+     x1="460"
+     y1="420"
+     x2="460"
+     y2="480"
+     stroke="#333"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     id="line35" />
+  <text
+     x="420"
+     y="450"
+     font-size="10"
+     fill="#333"
+     id="text36">G(true)</text>
+  <!-- Controller -->
+  <g
+     id="controller">
+    <rect
+       x="350"
+       y="620"
+       width="220"
+       height="100"
+       fill="#E6FFE6"
+       stroke="#00AA00"
+       stroke-width="2"
+       rx="5"
+       id="rect36" />
+    <text
+       x="460"
+       y="645"
+       font-size="14"
+       font-weight="bold"
+       text-anchor="middle"
+       id="text37">Controller</text>
+    <text
+       x="460"
+       y="665"
+       font-size="12"
+       text-anchor="middle"
+       id="text38">(PID or MPC)</text>
+    <text
+       x="460"
+       y="688"
+       font-size="11"
+       text-anchor="middle"
+       id="text39">Computes insulin rate</text>
+    <text
+       x="460"
+       y="705"
+       font-size="11"
+       text-anchor="middle"
+       id="text40">based on G(measured)</text>
+  </g>
+  <!-- Arrow from Sensor to Controller -->
+  <line
+     x1="460"
+     y1="560"
+     x2="460"
+     y2="620"
+     stroke="#333"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     id="line40" />
+  <text
+     x="420"
+     y="590"
+     font-size="10"
+     fill="#333"
+     id="text41">G(meas)</text>
+  <!-- Arrow from Controller to Pump -->
+  <path
+     d="M 570 670 L 800 670 L 800 520 L 920 520"
+     stroke="#00AA00"
+     stroke-width="2"
+     fill="none"
+     marker-end="url(#arrowhead)"
+     id="path41" />
+  <text
+     x="750"
+     y="665"
+     font-size="10"
+     fill="#00AA00"
+     id="text42">Insulin command</text>
+  <!-- Legend Box -->
+  <g
+     id="legend">
+    <rect
+       x="50"
+       y="620"
+       width="250"
+       height="180"
+       fill="#FFFEF0"
+       stroke="#999"
+       stroke-width="1"
+       rx="5"
+       id="rect42" />
+    <text
+       x="175"
+       y="645"
+       font-size="13"
+       font-weight="bold"
+       text-anchor="middle"
+       id="text43">State Variables</text>
+    <text
+       x="60"
+       y="670"
+       font-size="11"
+       font-weight="bold"
+       id="text44">G:</text>
+    <text
+       x="80"
+       y="670"
+       font-size="11"
+       id="text45">Glucose concentration (mg/dL)</text>
+    <text
+       x="60"
+       y="690"
+       font-size="11"
+       font-weight="bold"
+       id="text46">X:</text>
+    <text
+       x="80"
+       y="690"
+       font-size="11"
+       id="text47">Insulin action (1/min)</text>
+    <text
+       x="60"
+       y="710"
+       font-size="11"
+       font-weight="bold"
+       id="text48">I:</text>
+    <text
+       x="80"
+       y="710"
+       font-size="11"
+       id="text49">Plasma insulin (mU/L)</text>
+    <text
+       x="60"
+       y="730"
+       font-size="11"
+       font-weight="bold"
+       id="text50">M:</text>
+    <text
+       x="80"
+       y="730"
+       font-size="11"
+       id="text51">Meal remaining (mg/dL)</text>
+    <line
+       x1="60"
+       y1="745"
+       x2="290"
+       y2="745"
+       stroke="#999"
+       stroke-width="1"
+       id="line51" />
+    <text
+       x="60"
+       y="765"
+       font-size="11"
+       font-weight="bold"
+       id="text52">Target Range:</text>
+    <text
+       x="80"
+       y="783"
+       font-size="11"
+       id="text53">70-180 mg/dL</text>
+  </g>
+  <!-- Feedback Loop Indicator -->
+  <text
+     x="600"
+     y="820"
+     font-size="12"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#00AA00"
+     id="text54">
+    ← Closed-Loop Feedback →
+  </text>
+  <path
+     d="M 400 800 L 600 800 L 800 800"
+     stroke="#00AA00"
+     stroke-width="2"
+     fill="none"
+     marker-start="url(#arrowhead-left)"
+     marker-end="url(#arrowhead)"
+     id="path54" />
+  <!-- Component Labels -->
+  <text
+     x="50"
+     y="60"
+     font-size="12"
+     font-weight="bold"
+     fill="#666"
+     id="text55">INPUTS</text>
+  <text
+     x="351.21951"
+     y="270.97562"
+     font-size="12px"
+     font-weight="bold"
+     fill="#666666"
+     id="text56">PHYSIOLOGY</text>
+  <text
+     x="350"
+     y="600"
+     font-size="12"
+     font-weight="bold"
+     fill="#666"
+     id="text57">MEASUREMENT</text>
+  <text
+     x="350"
+     y="740"
+     font-size="12"
+     font-weight="bold"
+     fill="#666"
+     id="text58">CONTROL</text>
+  <text
+     x="920"
+     y="460"
+     font-size="12"
+     font-weight="bold"
+     fill="#666"
+     id="text59">ACTUATION</text>
+  <!-- Arrow definitions -->
+  <defs
+     id="defs60">
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3, 0 6"
+         fill="#333"
+         id="polygon59" />
+    </marker>
+    <marker
+       id="arrowhead-left"
+       markerWidth="10"
+       markerHeight="10"
+       refX="1"
+       refY="3"
+       orient="auto">
+      <polygon
+         points="10 0, 0 3, 10 6"
+         fill="#00AA00"
+         id="polygon60" />
+    </marker>
+  </defs>
+  <!-- Notes -->
+  <text
+     x="600"
+     y="870"
+     font-size="10"
+     text-anchor="middle"
+     fill="#666"
+     id="text60">
+    Note: This is a simplified Bergman minimal model with meal absorption and sensor-pump components
+  </text>
+  <rect
+     style="fill:#f2faed;fill-opacity:0.54142582;stroke-width:2.368;stroke:#63ead1;stroke-opacity:1;stroke-dasharray:2.368,7.10400025;stroke-dashoffset:0"
+     id="rect60"
+     width="813.41461"
+     height="179.26828"
+     x="329.26828"
+     y="252.43904"
+     ry="37.680595" />
+</svg>
