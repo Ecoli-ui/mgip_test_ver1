@@ -1,0 +1,3 @@
+Fields,Type,Description,Example
+name,string,"Name of the model",T1DM.ExtHovorka
+initial_conditions,JSON array,"Multidimensional array of the patient initial conditions. 1st dim: patient, 2nd dim: state variable",

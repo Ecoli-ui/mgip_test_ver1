@@ -1,0 +1,10 @@
+Fields,Type,Description,Example
+meal_carb,:code:`Events` JSON object, "Meal (magnitude, start time, duration) triplets.",In the :code:`Events` object table.
+snack_carb,:code:`Events` JSON object, "Snack (magnitude, start time, duration) triplets.",In the :code:`Events` object table.
+sgl2i,:code:`Events` JSON object, "SGL2i (magnitude, start time, duration) triplets.",In the :code:`Events` object table.
+basal_insulin,:code:`Events` JSON object, "Basal (magnitude, start time) pairs.",In the :code:`Events` object table.
+bolus_insulin,:code:`Events` JSON object, "Bolus (magnitude, start time, duration) triplets.",In the :code:`Events` object table.
+heart_rate,:code:`Events` JSON object, "Heart rate (magnitude, measurement time) pairs.",In the :code:`Events` object table.
+running_speed,:code:`Events` JSON object, "Running speed (magnitude, start time, duration) triplets.",In the :code:`Events` object table.
+running_incline,:code:`Events` JSON object, "Running incline (magnitude, start time, duration) triplets.",In the :code:`Events` object table.
+cycling_power,:code:`Events` JSON object, "Cycling power (magnitude, start time, duration) triplets.",In the :code:`Events` object table.

@@ -1,0 +1,4 @@
+Fields,Type,Description,Example
+settings,:code:`settings` JSON object,"General, simulator wide settings.",In the :code:`settings` object table.
+inputs,:code:`inputs` JSON object,"Defines the events (start time, magnitude and duration) of specific inputs.",In the :code:`inputs` object table.
+patient,:code:`patient` JSON object,"Describes the simulated virtual cohort.",In the :code:`patient` object table.

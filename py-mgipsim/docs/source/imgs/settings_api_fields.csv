@@ -1,0 +1,5 @@
+Fields,Type,Description,Example
+sampling_time,number,Sampling time of the simulation [min].,1
+solver_name,string,ODE solver name (Euler or RK4).,RK4
+start_time,number,Start time of the simulation[min].,0
+end_time,number,End time of the simulation[min].,5

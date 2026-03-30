@@ -1,0 +1,4 @@
+Fields,Type,Description,Example
+magnitude,JSON array, "Multidimensional array of the magnitudes of the input. 1st dim: patient, 2nd dim: samples","[[15,60]]"
+start_time,JSON array, "Multidimensional array of the start times of the input. 1st dim: patient, 2nd dim: samples","[[60,300]]"
+duration,JSON array, "Optional. Multidimensional array of the durations of the input. 1st dim: patient, 2nd dim: samples","[[5,20]]"

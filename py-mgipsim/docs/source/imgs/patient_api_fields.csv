@@ -1,0 +1,3 @@
+Fields,Type,Description,Example
+model,:code:`model` JSON object,Model descriptor.,In the :code:`model` object table.
+files,JSON array,Patient names.,["Patient_3.json"]
